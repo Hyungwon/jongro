@@ -1,0 +1,68 @@
+<script language="vbscript" runat="server">
+
+Sub Application_Onstart
+	Set FileObject = Server.CreateObject("Scripting.FileSystemObject")
+	VisitCountFileName = "E:\WEBHOSTING\LocalUser\visit_files\www.jongro.org\visit.txt"
+	Set Out = Fileobject.openTextFile(VisitCountFileName,1,False,False)
+	Application("num") = Out.ReadLine
+	application("visitcountfilename")=VisitCountFileName
+
+	application("now_visit") = 0
+End Sub
+
+Sub Application_OnEnd
+	Set fileobject = Server.CreateObject("Scripting.filesystemobject")
+	Set out = fileobject.CreateTextFile(application("visitcountfilename"),true)
+
+	application.lock
+	out.writeline(application("num"))
+	application.unlock
+End Sub
+
+Sub Session_OnStart
+
+	Application.Lock
+	Application("num")=Application("num") + 1
+	Application.UnLock
+
+	Application.Lock
+	Application("now_visit") = Application("now_visit") + 1
+	Application.UnLock
+	
+	session.timeout = 120
+	
+	if Application("num") MOD 10 = 0 then
+
+		Set fileobject = server.createobject("Scripting.filesystemobject")
+		Set out = FileObject.CreateTextFile(application("visitcountfilename"),true)
+
+		Application.Lock
+		Out.WriteLine(Application("num"))
+		Out.Close
+		Application.UnLock
+	end if
+
+
+	if Application("today") <> date then 
+		Application.lock
+		Application("today") = date
+		Application("today_visit") = 1
+		Application.unlock
+	else   
+		Application.lock
+		Application("today_visit") = Application("today_visit") + 1
+		Application.unlock
+  end if
+
+end Sub
+
+
+Sub Session_OnEnd
+
+	Application.Lock
+	Application("now_visit") = Application("now_visit") - 1
+	Application.UnLock
+
+end Sub
+
+</script>

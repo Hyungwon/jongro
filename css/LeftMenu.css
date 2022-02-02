@@ -1,0 +1,7 @@
+#left_m1 {list-style: none; margin: 0; padding: 0; overflow: hidden;}
+#left_m1 li {display: block; line-height: 0; font-size: 0;}
+#left_m1 li img {display: block;}
+
+#left_m1 li .left_sub {margin:0; padding:0; width:190px;  list-style:none; }
+#left_m1 li .left_sub li {line-height:0px; font-size:1px; vertical-align:top;}
+#left_m1 li .left_sub li img{display:block; vertical-align:top;}

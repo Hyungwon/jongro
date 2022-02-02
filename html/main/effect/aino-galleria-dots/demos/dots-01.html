@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Galleria Dots Theme Demo 01</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="../src/galleria.js"></script>
+        <style>
+            html,body{background:#eee}
+            #galleria{
+                width:1000px;
+                height:375px;
+                margin:20px auto 0 auto;
+                background:#222;
+                background:-moz-radial-gradient(center 45deg, circle closest-side, #222 40%, #000 100%);
+                background:-webkit-gradient(
+                    radial, center 50%, 20, center 50%, 250, from(#333), to(#000)
+                )
+            }
+        </style>
+    </head>
+<body>
+    <div id="galleria">
+        <img src="http://images.apple.com/iphone/home/images/overview_hero1_20100607.png">
+        <img src="http://images.apple.com/iphone/home/images/overview_hero2_20100607.png">
+        <img src="http://images.apple.com/iphone/home/images/overview_hero3_20100607.png">
+        <img src="http://images.apple.com/iphone/home/images/overview_hero4_20100607.png">
+        <img src="http://images.apple.com/iphone/home/images/overview_hero5_20100607.png">
+    </div>
+   More script and css style
+: <a href="http://www.htmldrive.net/" title="HTML DRIVE - Free DHMTL Scripts,Jquery plugins,Javascript,CSS,CSS3,Html5 Library">www.htmldrive.net </a> 
+    <script>
+    
+    // Load theme
+    Galleria.loadTheme('../src/themes/dots/galleria.dots.js');
+    
+    $('#galleria').galleria();
+    
+    </script>
+    </body>
+</html>

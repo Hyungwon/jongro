@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+ <HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+  <TITLE> New Document </TITLE>
+
+        <script type="text/javascript" src="/js/jquery-1.4.4.min.js"></script>
+        <script src="../src/galleria.js"></script>
+        <style type="text/css">
+            html,body{background:#fff; margin:0;padding:0}
+            #galleria{
+                width:580px;
+                height:370px;
+                margin:0px auto 0 auto;
+				padding:0
+                /*
+				background:#222;
+                background:-moz-radial-gradient(center 45deg, circle closest-side, #222 40%, #000 100%);
+                background:-webkit-gradient(
+                    radial, center 50%, 20, center 50%, 250, from(#333), to(#000)
+                )
+				*/
+            }
+        </style>
+
+    </head>
+<body>
+    <div id="galleria">
+	   
+		
+		<a href="/html/worship/01.asp"><img src="/images/main/main_img/main_img01.jpg" /></a>
+		<img src="/images/main/main_img/main_img02.jpg" />
+		<img src="/images/main/main_img/main_img03.jpg" />
+		
+	</div>
+   
+   
+   
+	
+	<script>
+    
+    // Load theme
+    Galleria.loadTheme('../src/themes/dots/galleria.dots.js');
+    
+    $('#galleria').galleria();
+    
+    </script>
+</body>
+</html>

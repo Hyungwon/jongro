@@ -57,7 +57,7 @@ function MM_preloadImages() { //v3.0
     <!-- Main banner //-->
     <table width="1080" border="0" cellspacing="0" cellpadding="0">
     <tr>
-        <td><iframe src="/html/main/effect/aino-galleria-dots/demos/01_20210515.asp" frameborder="0" width="1080" height="300" marginwidth="0" marginheight="0" scrolling="No"></iframe></td>
+        <td><iframe src="/html/main/effect/aino-galleria-dots/demos/01_20220128.asp" frameborder="0" width="1080" height="300" marginwidth="0" marginheight="0" scrolling="No"></iframe></td>
     </tr>
     </table></td>
 </tr>
@@ -67,7 +67,7 @@ function MM_preloadImages() { //v3.0
     <tr><td width="25%" align="center"><a href="/html/community/04.asp"><img src="/images/main/button_01.png" width="100"/></a></td>
         <td width="25%" align="center"><a href="/html/community/06.asp"><img src="/images/main/button_06.png" width="100"/></a></td>
         <td width="25%" align="center"><a href="/html/community/03.asp"><img src="/images/main/button_03.png" width="100"/></a></td>
-        <td width="25%" align="center"><a href="/html/new/03.asp"><img src="/images/main/button_04.png" width="100"/></a></td>        
+        <td width="25%" align="center"><a href="/html/new/03.asp"><img src="/images/main/button_04.png" width="100"/></a></td>
     </tr>
     <tr><td colspan="5" height="100"> </td></tr>
     </table></td>
